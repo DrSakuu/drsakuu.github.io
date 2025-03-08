@@ -1,6 +1,8 @@
 # DrSakuu's Knowledge Center
 This is where I share my knowledge on pretty much everything.
 
+Hosted on Github Pages: https://drsakuu.github.io
+
 [Project Babble mouth tracking for Quest 2](https://rentry.org/drsakuu-babble)
 
 [Doktor's morning stretches](https://www.youtube.com/watch?v=SGPBSqxKGAc&list=PLYjs-Veg21tNVwvX-JJ-2PNQ9euxzEYK2&index=1)
