@@ -155,10 +155,96 @@
                     <main>
                         <h1 id="drsakuus-knowledge-center"><a class="header" href="#drsakuus-knowledge-center">DrSakuu's Knowledge Center</a></h1>
 <p>This is where I share my knowledge on pretty much everything.</p>
-<p>Built using mdBook https://rust-lang.github.io/mdBook/index.html
-Hosted on Github Pages: https://drsakuu.github.io</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="project-babble-mouth-tracking-for-quest-2"><a class="header" href="#project-babble-mouth-tracking-for-quest-2">Project Babble mouth tracking for Quest 2</a></h1>
-<p><a href="https://rentry.org/drsakuu-babble">https://rentry.org/drsakuu-babble</a></p>
+<p>Built using mdBook: <a href="https://rust-lang.github.io/mdBook/index.html">https://rust-lang.github.io/mdBook/index.html</a>, hosted on Github Pages: <a href="https://drsakuu.github.io">https://drsakuu.github.io</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="youtube-playlists"><a class="header" href="#youtube-playlists">Youtube playlists</a></h1>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLqGZVbPNX_FFDPIneEjDcUDnSZqNERjut">DrSakuu's Stretching Playlist</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLqGZVbPNX_FFDPIneEjDcUDnSZqNERjut">DrSakuu's Animal Flow/Primal Movement</a></li>
+<li><a href="https://www.youtube.com/watch?v=TG2AtaWuikA&amp;list=PLqGZVbPNX_FEqnTO900vx788KC1vkcfcG">DrSakuu's Dance Playlist</a></li>
+<li><a href="https://www.youtube.com/watch?v=eJ_wNsQBQwY&amp;list=PLqGZVbPNX_FHKi9VfqHiMdVUP61zAjmry">DrSakuu's Chill Playlist</a></li>
+<li><a href="https://www.youtube.com/watch?v=YDm6C-3RJf0&amp;list=PLqGZVbPNX_FEn1lZyO_uevz1dRBLnrnU7">DrSakuu's Sets Playlist</a></li>
+<li><a href="https://www.youtube.com/watch?v=Txh9eMKkMAA&amp;list=PLqGZVbPNX_FHLbjtaypaiz5EEcRPdxFi7">DrSakuu's Contortion Playlist</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="drsakuus-babble-guide"><a class="header" href="#drsakuus-babble-guide">DrSakuu's Babble Guide</a></h1>
+<p><img src="images/babble_camera.jpg" alt="Finished camera and LEDs" /> <img src="images/babble_headset.jpeg" alt="Full shot" /></p>
+<p>This is how I made my Babble mouth tracking addon for Quest 2. <a href="https://docs.babble.diy/docs/intro">The Official docs</a> feel unfinished/have borken links/missing information hidden in Discord servers, so I wanted to collect all info in one place.</p>
+<h2 id="parts-list"><a class="header" href="#parts-list">Parts list</a></h2>
+<p><a href="https://docs.eyetrackvr.dev/getting_started/led_safety"><strong>About IR safety</strong></a>: IR can be dangerous to your eyes at a certain power level. Even if you only use these LEDs for the mouth, you might reuse same LEDs for eyetracking. <strong>It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.</strong></p>
+<p>These are the parts I ordered for my Quest 2. If you have parts that you know can serve the same purpose or can find more affordable alternatives, use them by all means. Try to plan your setup carefully, or just use what you already have.</p>
+<div class="table-wrapper"><table><thead><tr><th>Part</th><th>Price</th></tr></thead><tbody>
+<tr><td><a href="https://aliexpress.com/item/1005004788285643.html">Seeed Studio XIAO ESP32S3 Sense</a></td><td>21.32 €</td></tr>
+<tr><td><a href="https://vi.aliexpress.com/item/1005004518669324.html">OV2640 Camera Module 120°</a></td><td>6.35 €</td></tr>
+<tr><td>2x <a href="https://www.lcsc.com/product-detail/Infrared-IR-LEDs_XINGLIGHT-XL-3216HIRC-850_C965891.html">XINGLIGHT XL-3216HIRC-850 surface mount IR LED</a></td><td>3.57 €</td></tr>
+<tr><td><a href="https://vi.aliexpress.com/item/1005007218605811.html">~68R Resistor/Resistor kit</a></td><td>7.38 €</td></tr>
+<tr><td><a href="https://vi.aliexpress.com/item/1005001798119195.html">Red/black wires</a></td><td>1.22 €</td></tr>
+<tr><td>3D printed <a href="https://docs.babble.diy/docs/hardware/components/mounts">mount for your headset</a> and <a href="https://docs.babble.diy/docs/hardware/components/mounts/generalESPMounts">mount for the board</a>  and <a href="https://docs.babble.diy/docs/hardware/components/mounts/generalESPMounts">arm to connect them</a></td><td><a href="https://jlc3dp.com/3d-printing-quote">2.91 €  from JLC3DP</a></td></tr>
+<tr><td><a href="https://vi.aliexpress.com/item/1005004498966153.html?">Nuts and bolts</a></td><td>5.99 €</td></tr>
+<tr><td>Power source: Power bank/<a href="https://vi.aliexpress.com/item/1005006827692526.html">USB hub</a>/Index Frunk/<a href="https://vi.aliexpress.com/item/1005007516957301.html">USB cables</a></td><td>~30 €</td></tr>
+<tr><td>Total: Final price will depend on availability/shipping/taxes</td><td>~80 €</td></tr>
+</tbody></table>
+</div>
+<h3 id="seeed-studio-xiao-esp32s3-sense"><a class="header" href="#seeed-studio-xiao-esp32s3-sense">Seeed Studio XIAO ESP32S3 Sense</a></h3>
+<p><img src="images/XIAO%20Sense.avif" alt="Seeed Studio XIAO Sense" /></p>
+<p>If you know a better/cheaper board, you can use that. Make sure you have firmware and a mount for it though.</p>
+<h3 id="ov2640-camera-module-120"><a class="header" href="#ov2640-camera-module-120">OV2640 Camera Module 120°</a></h3>
+<p><img src="images/camera_120.avif" alt="OV2640 Camera Module 120°" /></p>
+<p>XIAO Sense Board includes a camera, but it is 69°. 120° is perfect for my headset and mount. <strong>Make sure the camera lens fits in your mount.</strong></p>
+<h3 id="xinglight-xl-3216hirc-850-surface-mount-ir-led"><a class="header" href="#xinglight-xl-3216hirc-850-surface-mount-ir-led">XINGLIGHT XL-3216HIRC-850 surface mount IR LED</a></h3>
+<p><img src="images/IR_LED.jpg" alt="XINGLIGHT XL-3216HIRC-850 surface mount IR LED" /></p>
+<p>I used two LEDs. <strong>5mm throughhole LEDs are focused and have a narrow FOV, you need to sand their lenses if you want to use them.</strong> This is why surface mount LEDs are better, even if they're more difficult to solder.</p>
+<h3 id="68r-resistorresistor-kit"><a class="header" href="#68r-resistorresistor-kit">68R Resistor/Resistor kit</a></h3>
+<p><img src="images/resistor_kit.avif" alt="Resistor kit" /></p>
+<p><a href="https://docs.babble.diy/docs/hardware/components/Lighting#sourcing">A ~68R resistor is recommended as per the Babble guide</a>. The resistor is required to protect the LEDs from overcurrent, it doesn't need to be exact but should be above 60R.</p>
+<h3 id="redblack-wires"><a class="header" href="#redblack-wires">Red/black wires</a></h3>
+<p><img src="images/wires.avif" alt="Wires" /></p>
+<p>Pay attention to the wire gauge, it needs to be very thin for the small components. <a href="https://docs.babble.diy/docs/hardware/components/Lighting#sourcing">Babble guide recommends 0.16 mm2/34 AWG</a>, I got 0.25 mm2/24 AWG wire.</p>
+<h3 id="mount"><a class="header" href="#mount">Mount</a></h3>
+<p><img src="images/mounts.jpeg" alt="Mounted camera" /></p>
+<p><strong>Right now, <a href="https://github.com/Project-Babble/BabbleHardware/tree/main/Official%20Hardware">the mounts are transitioning to M5 bolts</a>, so the parts might not fit together.</strong> Modify the files or ask drsakuu on Discord to do it for you. <a href="https://drive.google.com/file/d/1-t1OWTujl6RrL6jUhs3mz57azLlWX8P3/view?usp=drive_link">I made my own mount for the Quest 2</a>, because the tabs are too big to fit in the vent slit on the official model. <strong>Double check the holes and the dimensions so that the parts fit together.</strong> <a href="https://amesweb.info/Screws/Metric-Clearance-Hole-Chart.aspx">Refer to bolt clearance hole tables to plan the holes</a>. The board runs so hot that it has warped my PLA mount, consider using something more resilient.</p>
+<h3 id="nuts-and-bolts"><a class="header" href="#nuts-and-bolts">Nuts and bolts</a></h3>
+<p><img src="images/nuts_bolts.avif" alt="M4x20 bolt and nut" /></p>
+<p><strong>Triple check the holes and the width of the mount to get the right size.</strong> New official mounts use M5 bolts, for my mount I used M4x20mm bolts.</p>
+<h3 id="power-source"><a class="header" href="#power-source">Power source</a></h3>
+<p>I use a 10Ah powerbank with a 4-port USB hub so I can also power my eyetracking. The USB hub advertised PD 65W passthrough, but it didn't work for me. Also I've had bad experiences with powerbanks from AliExpress, so I don't want to link a specific one. I'm not sure if 10Ah is oversized or not.</p>
+<h2 id="tools-list"><a class="header" href="#tools-list">Tools list</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Tool</th><th>Task</th></tr></thead><tbody>
+<tr><td>Pliers</td><td>To soften the glue on the lens screw, to cut the wire and to turn the small bolts.</td></tr>
+<tr><td>Soldering station</td><td>To solder the LEDs and resistor to ESP 3V3/GND. It's good to have a soldering iron holder, desolder tape and a soldering mat in addition to the soldering iron and solder wire. Check your local area for workshops if you don't want to buy your own.</td></tr>
+<tr><td>Knife</td><td>To strip the wire (trim the rubber) and to break the IR filter on the camera.</td></tr>
+<tr><td>Small tweezers</td><td>To handle the surface mount LEDs and to pick out the IR filter on the camera.</td></tr>
+<tr><td>3D Printer</td><td>To print the mounts. I had a free 3D printer at the library, if you don't have one then it's probably cheaper <a href="https://jlc3dp.com/3d-printing-quote">to order prints online</a>.</td></tr>
+<tr><td>File/sandpaper</td><td>To finish the 3D prints if you print them yourself.</td></tr>
+<tr><td>Tape/glue</td><td>To attach the mount or the LEDs more securely.</td></tr>
+<tr><td>Heat shrink tube</td><td>To protect the soldered contacts if you don't want them to be exposed.</td></tr>
+</tbody></table>
+</div>
+<h2 id="assembly-guide"><a class="header" href="#assembly-guide">Assembly guide</a></h2>
+<h3 id="board"><a class="header" href="#board">Board</a></h3>
+<p>Attach the camera hat to the ESP board and attach the antenna if you use Wi-Fi. <a href="https://docs.eyetrackvr.dev/how_to_build/preparing_xiao">EyetrackVR has picture guide on this</a>. Attach the heatsink (after soldering the LEDs) if your board includes it and your mount has an opening for it. Finally <a href="https://docs.eyetrackvr.dev/firmware_guide/flashing_tool">flash with the EyeTrackVR Firmware Flashing Tool</a>. Right now the firmware has freezing issues, but they're working on it. Connect it to power and open its IP in your browser to test it. If you forgot to set a custom address for the board, check the board's IP from your router's device list.</p>
+<h3 id="camera"><a class="header" href="#camera">Camera</a></h3>
+<p>Remove the IR filter, it is a piece of glass on the backside of the lens that has multicolor reflections. Try to use just your fingers first to unscrew the lens, but if the glue is too strong, gently squeeze the base with pliers. Depending on the lens model, you might be able to lift the IR filter without breaking it. <a href="https://docs.eyetrackvr.dev/how_to_build/preparing_cameras#ir-filter-removal">EyetrackVR has video guide on this.</a> Then swap the camera on the board with your custom one, being careful with the ribbon cable.</p>
+<h3 id="lighting"><a class="header" href="#lighting">Lighting</a></h3>
+<p>Check <a href="https://ledcalculator.net/#p=3.3&amp;v=1.2&amp;c=30&amp;n=2&amp;o=w">LED Calculator</a> for the wiring diagram. A low temperature solder is recommended for surface mount components, but I didn't break the LEDs (somehow). I cut and strip the wires to length as I'm soldering, but you can plan ahead if you have more patience.</p>
+<p><img src="images/soldering.jpeg" alt="One wire and LED soldered" /></p>
+<p>Solder a red wire to ESP 3V3, then one LED, then another red wire and another LED, then the ~68R resitor and finally a black wire back to ESP GND. Make sure you solder the LEDs the right way round, on the surface mount LEDs the arrow on the bottom points to positive side, and on top there is a colored square on the positive side. Consider attaching the wires to the mount with double sided tape or glue if the soldering is fragile.</p>
+<h3 id="mount-1"><a class="header" href="#mount-1">Mount</a></h3>
+<p><img src="images/board_in_mount.jpeg" alt="Board in the mount" /></p>
+<p>I had to use a file on the tabs that attach to Quest 2 because they printed too thick for the vent slit. Put the camera board in the mount and assemble it together with the bolts. Attach the mount to your headset depending on the model, optionally using double sided tape.</p>
+<h2 id="software"><a class="header" href="#software">Software</a></h2>
+<ul>
+<li>VRCFaceTracking: <a href="https://docs.vrcft.io/docs/vrcft-software/vrcft">AppInstaller</a> or <code>winget install BenacleJames.VRCFaceTracking</code></li>
+<li>Babble: <a href="https://github.com/Project-Babble/ProjectBabble/releases">Github releases</a> or <a href="https://drive.google.com/file/d/1KmMBYSmAGlqDeTEjgnOOCX8YpWeeBgPb/view?usp=drive_link">2.1.0 Beta 1 on Google Drive</a></li>
+</ul>
+<p>In VRCFaceTracking, install the VRCFT-Babble module and set the program to start with SteamVR. For Babble, you can <a href="https://github.com/vrcx-team/VRCX">use VRCX to autostart it with VRChat</a> (Settings - Advanced - App Launcher).</p>
+<p><img src="images/software_calibration.png" alt="Project Babble calibration" /></p>
+<p>VRCFaceTracking and Babble have a calibration feature, but I can't do some mouth shapes with them. I disable VRCFaceTracking calibration and edit the Babble calibration values manually in the Calibration tab. This might change as the programs are constantly being updated.</p>
+<p>Your avatar needs a facetracking prefab, <a href="https://boothplorer.com/avatars/face_tracking">BOOTHPLORER</a> has a list of them, or you can search for VRCFT or FT or Face Tracking in <a href="https://vrchat.com/home/launch?worldId=wrld_57514404-7f4e-4aee-a50a-57f55d3084bf">Prismic's Avatar Search</a>.</p>
+<h2 id="contact"><a class="header" href="#contact">Contact</a></h2>
+<ul>
+<li><strong>Carrd</strong>: <a href="https://drsakuu.carrd.co">https://drsakuu.carrd.co</a></li>
+<li><strong>Discord</strong>: <a href="https://discord.com/users/192652462375698432">drsakuu</a></li>
+</ul>
+<p>Feel free to message me your questions/feedback/success stories <del>pls I feel lonely</del>. Please state your purpose in a concise message, <a href="https://nohello.net/">don't say just "Hello"</a>, <a href="https://dontasktoask.com">don't ask to ask</a>,  <a href="https://xyproblem.info">state your actual problem</a>.</p>
 
                     </main>
 
@@ -177,6 +263,22 @@ Hosted on Github Pages: https://drsakuu.github.io</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
