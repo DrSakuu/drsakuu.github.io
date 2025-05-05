@@ -156,7 +156,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="drsakuus-babble-guide"><a class="header" href="#drsakuus-babble-guide">DrSakuu's Babble Guide</a></h1>
-<p><img src="images/babble_camera.jpg" alt="Finished camera and LEDs" /> <img src="images/babble_headset.jpeg" alt="Full shot" /></p>
+<p><a href="https://i.imgur.com/JsgrDnJ.jpeg"><img src="images/babble_camera.jpg" alt="DIY mouth tracking addon for Quest 2" /></a> <a href="https://i.imgur.com/JGF4GT3.jpeg"><img src="images/babble_headset.jpeg" alt="Finished camera and LEDs" /></a></p>
 <p>This is how I made my Babble mouth tracking addon for Quest 2. <a href="https://docs.babble.diy/docs/intro">The Official docs</a> feel unfinished/have borken links/missing information hidden in Discord servers, so I wanted to collect all info in one place.</p>
 <h2 id="parts-list"><a class="header" href="#parts-list">Parts list</a></h2>
 <p><a href="https://docs.eyetrackvr.dev/getting_started/led_safety"><strong>About IR safety</strong></a>: IR can be dangerous to your eyes at a certain power level. Even if you only use these LEDs for the mouth, you might reuse same LEDs for eyetracking. <strong>It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.</strong></p>
@@ -189,17 +189,17 @@
 <p><img src="images/wires.avif" alt="Wires" /></p>
 <p>Pay attention to the wire gauge, it needs to be very thin for the small components. <a href="https://docs.babble.diy/docs/hardware/components/Lighting#sourcing">Babble guide recommends 0.16 mm2/34 AWG</a>, I got 0.25 mm2/24 AWG wire.</p>
 <h3 id="mount"><a class="header" href="#mount">Mount</a></h3>
-<p><img src="images/mounts.jpeg" alt="Mounted camera" /></p>
+<p><a href="https://i.imgur.com/whU1RD1.jpeg"><img src="images/mounts.jpeg" alt="Mounted camera" /></a></p>
 <p><strong>Right now, <a href="https://github.com/Project-Babble/BabbleHardware/tree/main/Official%20Hardware">the mounts are transitioning to M5 bolts</a>, so the parts might not fit together.</strong> Modify the files or ask drsakuu on Discord to do it for you. <a href="https://drive.google.com/file/d/1-t1OWTujl6RrL6jUhs3mz57azLlWX8P3/view?usp=drive_link">I made my own mount for the Quest 2</a>, because the tabs are too big to fit in the vent slit on the official model. <strong>Double check the holes and the dimensions so that the parts fit together.</strong> <a href="https://amesweb.info/Screws/Metric-Clearance-Hole-Chart.aspx">Refer to bolt clearance hole tables to plan the holes</a>. The board runs so hot that it has warped my PLA mount, consider using something more resilient.</p>
 <h3 id="nuts-and-bolts"><a class="header" href="#nuts-and-bolts">Nuts and bolts</a></h3>
 <p><img src="images/nuts_bolts.avif" alt="M4x20 bolt and nut" /></p>
 <p><strong>Triple check the holes and the width of the mount to get the right size.</strong> New official mounts use M5 bolts, for my mount I used M4x20mm bolts.</p>
 <h3 id="power-source"><a class="header" href="#power-source">Power source</a></h3>
-<p>I use a 10Ah powerbank with a 4-port USB hub so I can also power my eyetracking. The USB hub advertised PD 65W passthrough, but it didn't work for me. Also I've had bad experiences with powerbanks from AliExpress, so I don't want to link a specific one. I'm not sure if 10Ah is oversized or not.</p>
+<p>I use a 10Ah powerbank. I've had bad experiences with powerbanks from AliExpress, so I don't want to link a specific one. The 10Ah powerbank gives many more hours of playtime than my Vive trackers and.</p>
 <h2 id="tools-list"><a class="header" href="#tools-list">Tools list</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Tool</th><th>Task</th></tr></thead><tbody>
 <tr><td>Pliers</td><td>To soften the glue on the lens screw, to cut the wire and to turn the small bolts.</td></tr>
-<tr><td>Soldering station</td><td>To solder the LEDs and resistor to ESP 3V3/GND. It's good to have a soldering iron holder, desolder tape and a soldering mat in addition to the soldering iron and solder wire. Check your local area for workshops if you don't want to buy your own.</td></tr>
+<tr><td>Soldering station</td><td>To solder the LEDs and resistor to ESP 3V3/GND. It's good to have a soldering iron holder, desolder tape and a soldering mat in addition to the soldering iron and solder wire. Check your local area for workshops if you don't want to buy your own. Soldering surface mount components is difficult, so I recommend helping hands clasps.</td></tr>
 <tr><td>Knife</td><td>To strip the wire (trim the rubber) and to break the IR filter on the camera.</td></tr>
 <tr><td>Small tweezers</td><td>To handle the surface mount LEDs and to pick out the IR filter on the camera.</td></tr>
 <tr><td>3D Printer</td><td>To print the mounts. I had a free 3D printer at the library, if you don't have one then it's probably cheaper <a href="https://jlc3dp.com/3d-printing-quote">to order prints online</a>.</td></tr>
@@ -215,10 +215,10 @@
 <p>Remove the IR filter, it is a piece of glass on the backside of the lens that has multicolor reflections. Try to use just your fingers first to unscrew the lens, but if the glue is too strong, gently squeeze the base with pliers. Depending on the lens model, you might be able to lift the IR filter without breaking it. <a href="https://docs.eyetrackvr.dev/how_to_build/preparing_cameras#ir-filter-removal">EyetrackVR has video guide on this.</a> Then swap the camera on the board with your custom one, being careful with the ribbon cable.</p>
 <h3 id="lighting"><a class="header" href="#lighting">Lighting</a></h3>
 <p>Check <a href="https://ledcalculator.net/#p=3.3&amp;v=1.2&amp;c=30&amp;n=2&amp;o=w">LED Calculator</a> for the wiring diagram. A low temperature solder is recommended for surface mount components, but I didn't break the LEDs (somehow). I cut and strip the wires to length as I'm soldering, but you can plan ahead if you have more patience.</p>
-<p><img src="images/soldering.jpeg" alt="One wire and LED soldered" /></p>
-<p>Solder a red wire to ESP 3V3, then one LED, then another red wire and another LED, then the ~68R resitor and finally a black wire back to ESP GND. Make sure you solder the LEDs the right way round, on the surface mount LEDs the arrow on the bottom points to positive side, and on top there is a colored square on the positive side. Consider attaching the wires to the mount with double sided tape or glue if the soldering is fragile.</p>
+<p><a href="https://i.imgur.com/rJa2BGT.jpeg"><img src="images/soldering.jpeg" alt="One wire and LED soldered" /></a></p>
+<p>Solder a red wire to ESP 3V3, then one LED, then another red wire and another LED, then a black wire and finally the ~68R resitor back to ESP GND. Make sure you solder the LEDs the right way round, on the surface mount LEDs the arrow on the bottom points to positive side, and on top there is a colored square on the positive side. Consider attaching the wires to the mount with double sided tape or glue if the soldering is fragile.</p>
 <h3 id="mount-1"><a class="header" href="#mount-1">Mount</a></h3>
-<p><img src="images/board_in_mount.jpeg" alt="Board in the mount" /></p>
+<p><a href="https://i.imgur.com/fLxFBtz.jpeg"><img src="images/board_in_mount.jpeg" alt="Board in the mount" /></a></p>
 <p>I had to use a file on the tabs that attach to Quest 2 because they printed too thick for the vent slit. Put the camera board in the mount and assemble it together with the bolts. Attach the mount to your headset depending on the model, optionally using double sided tape.</p>
 <h2 id="software"><a class="header" href="#software">Software</a></h2>
 <ul>
