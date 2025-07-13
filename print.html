@@ -42,6 +42,17 @@
         <script src="toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -119,7 +130,7 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -181,7 +192,7 @@
 <p>* <em>Doktor of cuddeology, not a medical professional.</em></p>
 <p>Built using <a href="https://rust-lang.github.io/mdBook/index.html">mdBook</a>, hosted on <a href="https://pages.github.com">Github Pages</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="drsakuus-babble-guide"><a class="header" href="#drsakuus-babble-guide">DrSakuu's Babble Guide</a></h1>
-<p><a href="https://i.imgur.com/JsgrDnJ.jpeg"><img src="images/babble_camera.jpg" alt="DIY mouth tracking addon for Quest 2" /></a> <a href="https://i.imgur.com/JGF4GT3.jpeg"><img src="images/babble_headset.jpeg" alt="Finished camera and LEDs" /></a></p>
+<p><a href="https://i.imgur.com/JsgrDnJ.jpeg"><img src="images/babble_camera.jpg" alt="Finished camera and LEDs" /></a> <a href="https://i.imgur.com/JGF4GT3.jpeg"><img src="images/babble_headset.jpeg" alt="Full shot" /></a></p>
 <p>This is how I made my Babble mouth tracking addon for Quest 2. <a href="https://docs.babble.diy/docs/intro">The Official docs</a> feel unfinished/have borken links/missing information hidden in Discord servers, so I wanted to collect all info in one place.</p>
 <h2 id="parts-list"><a class="header" href="#parts-list">Parts list</a></h2>
 <p><a href="https://docs.eyetrackvr.dev/getting_started/led_safety"><strong>About IR safety</strong></a>: IR can be dangerous to your eyes at a certain power level. Even if you only use these LEDs for the mouth, you might reuse same LEDs for eyetracking. <strong>It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.</strong></p>
@@ -366,7 +377,7 @@
 <p>Why do people sleep? People strive for lucid dreaming where all dreams come true, but balance is important; it's easy to fear that your worst fears will come true. You have to be happy with this moment because it is the only thing that exists. If you are afraid, then your worst fears will come true. If you are happy, it will spread to others.</p>
 <h2 id="the-trip"><a class="header" href="#the-trip">The Trip</a></h2>
 <ul>
-<li><a href="https://youtu.be/h6fcK_fRYaI?si=QGG4-i31_w5APvWY">The Egg</a></li>
+<li><a href="https://youtu.be/h6fcK_fRYaI">The Egg</a></li>
 </ul>
 <p>We are all on The Trip from birth to death, Big Bang to Heat Death of the Universe. Some people want to live fast and die young, some want to live slow and die whenever. Some people choose to be reincarnated as medieval peasants to see what it would feel like. You will be reincarnated as all your doctors and caretakers, your friends and enemies, so you should take good care of them too. The Universe lives for the longest time. You decide who you take along on your Trip.</p>
 <h2 id="further-reading"><a class="header" href="#further-reading">Further reading</a></h2>
@@ -378,9 +389,9 @@
 <li><a href="https://youtu.be/_KQLrWE2sII?si=GapHjHfkfXcIm_9n">consciousness creates reality (the power of observation)</a></li>
 <li><a href="https://youtu.be/pc2xlLuCp4Y?si=igfevMnVTLwrnvnI">Do These 3 Things EVERY Morning!</a></li>
 <li><a href="https://dontdie.bryanjohnson.com">Don't Die by Bryan Johnson</a></li>
-<li><a href="https://youtu.be/sa59MHiLzSw">Don't self-improve yourself to burnout</a></li>
 <li><a href="https://youtu.be/8zEIEUBRLyg">The Ecstasy of an Open Brain | Radiolab Podcast</a></li>
 <li><a href="https://www.youtube.com/watch?v=NESBtODxNVA">Existential Crisis in Class</a></li>
+<li><a href="https://youtu.be/gSvUqhZcbVg">Hauntology, Lost Futures and 80s Nostalgia</a></li>
 <li><a href="https://hitchhikers.fandom.com/wiki/Ruler_of_the_Universe">The Hitchhiker's Wiki: Ruler of the Universe</a></li>
 <li><a href="https://youtu.be/jK8DrrxCEGA">How to Shift Between Dimensions of Consciousnesses</a></li>
 <li><a href="https://youtu.be/HC3uUGCJpqs?si=TuzpJ7ugtvnJdvrR">The Importance of a Breakdown</a></li>
@@ -388,10 +399,12 @@
 <li><a href="https://youtu.be/7ARBJQn6QkM?si=OFdSliAHphjh8y3m">NVIDIA CEO Jensen Huang's Vision for the Future</a></li>
 <li><a href="https://www.youtube.com/playlist?list=PLW0B_RPmPTMScvZZssXQ6VBS4C3kaLByN">Psychonautic Discoveries</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Red_pill_and_blue_pill">Red pill and blue pill</a></li>
+<li><a href="https://youtu.be/5t6PioeCPII">Religious Belief Is Just Personality! Here's How</a></li>
 <li><a href="https://slatestarcodex.com/2014/07/30/meditations-on-moloch">Slate Star Codex: Meditations On Moloch</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Synchronicity">Synchronicity</a></li>
 <li><a href="https://youtu.be/HyKYckUHlf0?si=SVvfVZ7UfX3m2cj4">This is why Synchronicities show up</a></li>
 <li><a href="https://youtu.be/vtKW0MyuGfc">Watch These 86 Minutes To Rewire Your Brain (ft. Miranda Kerr)</a></li>
+<li><a href="https://youtu.be/sa59MHiLzSw">Why improving yourself is ruining you</a></li>
 <li><a href="https://youtu.be/LCgCeoxToek">Why Intelligent People Scare Society | Schopenhauer</a></li>
 <li><a href="https://youtu.be/2HTn0T21k0U">The World Is Making Us Sick</a></li>
 <li><a href="https://www.youtube.com/watch?v=OrHeg77LF4Y">Zeitgeist: The Movie</a></li>
