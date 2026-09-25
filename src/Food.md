@@ -40,7 +40,6 @@ Total: 2580 kcal for 32-year-old 62kg very active man.
 |Nut Mix, Without Salt     |20      |127         |
 |**Total**                     |        |852         |
 
-
 ## 4pm Dinner
 
 ![1600 Dinner](images/1600_dinner.jpg)
@@ -65,7 +64,7 @@ Total: 2580 kcal for 32-year-old 62kg very active man.
 |Nut Mix, Without Salt     |20      |127         |
 |**Total**                     |        |752         |
 
-## Fineli 
+## Fineli
 
 ![Fineli Energy Proportion](images/20250218_2_fineli_energy_proportion.png)
 
