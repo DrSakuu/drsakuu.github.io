@@ -16,8 +16,3 @@ In psychosis, consciousness takes a leap to a higher level, and you can easily g
 we need someone who can think outside the box
 solve the box
 break the task to smaller boxes
-
-https://www.youtube.com/watch?v=NZD5IFpyDcE
-https://www.youtube.com/watch?v=BArGVVolhl0
-https://www.youtube.com/watch?v=MFR6SMV64h4
-https://www.youtube.com/watch?v=t44PFI_V4LE
