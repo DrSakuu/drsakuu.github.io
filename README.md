@@ -1,4 +1,4 @@
-# DrSakuu's Knowledge Center
+# DrSakuu's Knowledge Center Readme
 This is where I share my knowledge on pretty much everything.
 
-Hosted on Github Pages: https://drsakuu.github.io
+Built using mdBook: [https://rust-lang.github.io/mdBook/index.html](https://rust-lang.github.io/mdBook/index.html), hosted on Github Pages: [https://drsakuu.github.io](https://drsakuu.github.io)

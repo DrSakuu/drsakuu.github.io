@@ -1,0 +1,15 @@
+# Doktor's favorite programs
+
+- [UniGetUI - Universal External Package Manager](https://www.marticliment.com/unigetui/)
+- [Everything - File Search Engine](https://www.voidtools.com)
+- [WizTree - Disk Space Analyzer](https://diskanalyzer.com)
+- [FreeFileSync - Folder Comparison and Synchronization](https://freefilesync.org)
+- [Windhawk - Windows System Tweaker](https://windhawk.net)
+- [ALCOM - VRChat Package Manager](https://vrc-get.anatawa12.com/alcom/)
+- [ShareX - Screen Capture Tool](https://getsharex.com)
+- [Vencord - Discord Client Mod](https://vencord.dev)
+- [Beeper - Universal Chat Client](https://www.beeper.com)
+- [Shutter Encoder - Media Converter](https://www.shutterencoder.com/)
+- [LocalSend - Local Network File Transfer](https://localsend.org)
+- [GenP - MAKING ADOBE RIOT!](https://gen.paramore.su)
+- [Spicetify - MAKING SPOTIFY RIOT!](https://spicetify.app)
